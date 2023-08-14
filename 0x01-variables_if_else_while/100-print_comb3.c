@@ -1,32 +1,38 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
  *
+ * Description: Prints all possible different combinations
+ * of two digits in ascending order, excluding 'q' and 'e'.
+ *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-    int i = 0;
+	int i = 0;
 
-    while (i < 100)
-    {
-        putchar(i / 10 + '0');
-        putchar(i % 10 + '0');
+	while (i < 100)
+	{
+		int first_digit = i / 10;
+		int second_digit = i % 10;
 
-        if (i < 89)
-        {
-            putchar(',');
-            putchar(' ');
-        }
+		if (first_digit < second_digit && i != 89)
+		{
+			putchar(first_digit + '0');
+			putchar(second_digit + '0');
 
-        i++;
-    }
+			if (i < 88)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
 
-    putchar('\n');
+		i++;
+	}
 
-    return 0;
+	putchar('\n');
+
+	return (0);
 }
