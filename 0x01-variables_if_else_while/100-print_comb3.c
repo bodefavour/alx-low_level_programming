@@ -17,7 +17,7 @@ int main(void)
 		int first_digit = i / 10;
 		int second_digit = i % 10;
 
-		if (first_digit < second_digit && i != 89)
+		if (first_digit < second_digit && i != 90)
 		{
 			putchar(first_digit + '0');
 			putchar(second_digit + '0');
