@@ -22,7 +22,7 @@ int main(void)
 			putchar(first_digit + '0');
 			putchar(second_digit + '0');
 
-			if (i < 88)
+			if (i < 89)
 			{
 				putchar(',');
 				putchar(' ');
