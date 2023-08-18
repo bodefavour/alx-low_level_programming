@@ -11,9 +11,9 @@ void print_numbers(void)
 {
 	int g;
 
-	for (g = 48; g <= 57; g++)
+	for (g = 0; g < 10; g++)
 	{
-		_putchar(g);
+		_putchar(g + '0');
 	}
 
 	_putchar('\n');
