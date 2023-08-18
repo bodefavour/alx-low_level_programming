@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_numbers - a function that prints the numbers, from 0 to 9
- * @g: integer used 
+ * print_numbers - a function that prints the numbers,
+ * @g:  represented integer used 
  * Return: no return
  */
 
@@ -11,9 +11,9 @@ void print_numbers(void)
 {
 	int g;
 
-	for (g = 0; g < 10; g++)
+	for (g = 48; g <= 57; g++)
 	{
-		_putchar(g + '0');
+		_putchar(g);
 	}
 
 	_putchar('\n');
