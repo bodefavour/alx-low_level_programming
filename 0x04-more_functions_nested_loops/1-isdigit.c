@@ -7,7 +7,7 @@
  * Return: 1 if c is a digit, 0 if otherwise
  */
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	char c;
 	if (c >= '0' && c <= '9', c++)
