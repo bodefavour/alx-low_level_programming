@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - a function that prints the numbers, from 0 to 9
- * 
+ * @g: integer used 
  * Return: no return
  */
 
