@@ -2,9 +2,8 @@
 
 /**
  * print_diagsums - a function that prints the sum of two diagonals
- * @a: square matrix of which we print the sum of diagonals
+ * @ia: square matrix of which we print the sum of diagonals
  * @size: size of the matrix
- * Return: 0
  */
 
 void print_diagsums(int *a, int size)
