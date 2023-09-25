@@ -1,3 +1,35 @@
+#ifndef _LISTS_H_
+#define _LISTS_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * struct listint_s - a singly linked list
+ * @n: an integer
+ * @next: always points to the next node
+ *
+ * Description: singly linked list node structure ALX project
+ */
+typedef struct listint_s
+{
+	int n;
+	struct listint_s *next;
+} listint_t;
+
+/**
+ * struct listp_s - singly linked list
+ * @p: a pointer of nodes
+ * @next: always points to the next node
+ *
+ * Description: a singly linked list of pointers.
+ */
+typedef struct listp_s
+{
+	void *p;
+	struct listp_s *next;
+} listp_t;
+
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
@@ -13,3 +45,5 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
+
+#endif
