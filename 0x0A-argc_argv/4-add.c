@@ -1,4 +1,5 @@
 #include <ctype.h>
+#include <stdio.h>
 
 /**
  * main - a funtion that adds positive numbers
